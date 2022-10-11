@@ -1,0 +1,11 @@
+<div *ngIf="pokemon">
+    <h1> {{ pokemon && pokemon.name }} </h1> 
+<button *ngIf="pokemon" (click)="goToPokemonEdit (pokemon) ">Modifier</button>
+<button *ngIf="pokemon" (click)="deletePokemon (pokemon) ">Supprimer</button>
+</div>
+
+
+<div *ngIf="!pokemon">
+    <app-loader></app-loader>
+</div>
+

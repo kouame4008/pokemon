@@ -1,0 +1,9 @@
+<p>list-pokemon works!</p>
+
+<h1> <a routerLink="/add/pokemon">Ajouter un Pokemon</a> </h1>
+
+<app-search-pokemon></app-search-pokemon>
+
+<h1 (click)="selectPokemon(item)" *ngFor="let item of pokemonList">
+    {{ item.name }}
+</h1>
